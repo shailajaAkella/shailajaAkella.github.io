@@ -21,8 +21,10 @@ a:link {
     color: #999;
 }
 a:hover {
-    color: #999;
     text-decoration: underline;
+}
+a:active{
+    color: #999;
 }
 h1 {
     font-size: 3em;
