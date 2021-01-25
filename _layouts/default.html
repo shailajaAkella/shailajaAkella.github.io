@@ -30,17 +30,18 @@
         <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
         <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
       {% endif %}
+	 <nav>
+		 <p>
+			<a style = "font-size:30px" href="/" class = "btn"> Home </a>
+		        <a style = "font-size:30px" href="/about" class = "btn">About</a>
+	        	<a style = "font-size:30px" href="/projects" class = "btn">Projects</a>
+	        	<a style = "font-size:30px" href="/publications" class = "btn">Publications</a>
+	    	</p>
+	</nav>
     </header>
 
     <main id="content" class="main-content" role="main">
-	        <nav>
-	    		<p>
-				<a style = "font-size:30px" href="/"> Home </a>
-		        	<a style = "font-size:30px" href="/about">About</a>
-	        		<a style = "font-size:30px" href="/cv">Projects</a>
-	        		<a style = "font-size:30px" href="/blog">Publications</a>
-	    		</p>
-	</nav>
+	       
       {{ content }}
 
       <footer class="site-footer">
