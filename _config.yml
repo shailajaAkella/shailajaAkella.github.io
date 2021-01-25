@@ -1,4 +1,4 @@
 name: Shailaja Akella
-description: Graduate student in Electrical and Computer Engineering. <br> <a href="http://www.cnel.ufl.edu/"> Computational NeuroEngineering Lab </a> , University of Florida.
+description: Graduate student in Electrical and Computer Engineering. <br> <a:hover href="http://www.cnel.ufl.edu/"> Computational NeuroEngineering Lab </a:hover> , University of Florida.
 markdown: kramdown
 theme: jekyll-theme-cayman
