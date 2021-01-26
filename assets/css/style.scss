@@ -2,7 +2,9 @@
 ---
 
 $body-link-color: #ffffff;
-$body-text-font: "Courier New" !default;
+.main-content{
+      font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 @import"{{site.theme}}"
 
