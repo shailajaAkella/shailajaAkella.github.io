@@ -5,27 +5,30 @@ $body-link-color: #ffffff;
 .main-content{
       font-family:Verdana, sans-serif;
       ul {
-    text-align: center;
-    list-style-position: inside; 
+            text-align: center;
+            list-style-position: inside; 
       }
       /* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
+      .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+      }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+      /* Clear floats after the columns */
+      .row:after {
+            content: "";
+            display: table;
+            clear: both;
+      }
      
      .textWrap{
-      float:right;
-      margin: 10px
+            float:right;
+            margin: 10px
       }
+      #rcorners1 {
+            border-radius: 25px;
+            }
       
 }
 
