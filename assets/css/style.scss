@@ -114,6 +114,10 @@ $body-link-color: #ffffff;
             border: 1px solid #ccc;
             border-top: none;
       }
+      
+      .page-header{
+            padding = 10px;
+      }
 }
 
 @import"{{site.theme}}"
