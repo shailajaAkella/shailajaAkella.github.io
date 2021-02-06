@@ -45,7 +45,8 @@ $body-link-color: #ffffff;
       }
       
       .active, .collapsible:hover {
-            background-color: #e5ffec;          
+            background-color: #e5ffec; 
+            box-shadow: 5px 5px 2px grey;
       }
 
       
