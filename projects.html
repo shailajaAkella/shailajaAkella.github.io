@@ -29,31 +29,6 @@ title: Shailaja Akella
 
 <p>
  
-<button type="button" class="collapsible">
-<div class="blurb">
- <img class = "textWrap2" src="Picture5.jpg" alt="Model" style="width:370px;height:250px"> 
- <h4 style ="text-align: center; color:#737373">   <strong> TRANSIENT MODEL FOR NEUROMODULATORY EVENTS IN FIELD POTENTIALS </strong>  </h4>
- <p style = "font-size:15px"> Electrophysiological recordings are highly non - stationary signals and therefore, difficult to model. We present a generative model that captures 
-   the dynamics of these recordings with high – time resolution.</p>
- </div>
-</button>
-<div class="content">
- <img src="Picture1.jpg" alt="neuromodulations">
- <img src="Picture2.jpg" alt="Model">
- <p style = "text-align:justify; text-justify: inter-word; font-size: 15px"> Field potentials recorded from the brain (invasive or non - invasively) are non - stationary signals that represent the dynamic interactions between local neural populations. 
-  Synchronized interactions between populations then manifest as oscillatory bursts in the field potentials. These bursts are called neuromodulations and have been recognized by clinicians as bursts of rhythmic activity that wax and wane when eyeballing the signal. Further, they are temporally sparse and transient. On the other hand,  
-  unsynchronized interactions contribute to background activity that is featureless and unstructured. </p>
- <p style = "text-align:justify; text-justify: inter-word; font-size: 15px"> Neuromodulatory patterns command much interest because of their role as potential biological markers in the early detection of neurological diseases and as pneural 
-  patterns carrying cognitive content. While classical signal processing techniques attempt to identify these oscillatory bursts using spectral representations of the signal, they are limited by the inherent time - frequency trade-off.
-  Moreover, such analyses demand more specialized methods that incorporate the neurophysiology of signal generation and high-time resolution. In this project, we aim to adress these issues to classify and characterize neuromodulations 
-  from field potentials. We do so in an unsupervised manner using information theoretic measures, sparse-coding techniques and point process modeling. </p>
- <p style = "text-align: center"><a style = "text-align: center; color: #737373; font-size:18px; border:4px; border-style:solid; border-color:#4d94ff; 
-  padding: 0.5em" href="https://pubmed.ncbi.nlm.nih.gov/33348332/"> <strong> FULL PAPER </strong> </a></p>
-</div>
-
-<p>
-
- 
 <button type="button" class="collapsible"> 
 <div class="blurb">
   <img class = "textWrap2" src="Picture6.jpg" alt="Model" style="width:370px;height:250px"> 
@@ -111,3 +86,21 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
