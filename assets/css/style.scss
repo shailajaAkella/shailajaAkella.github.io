@@ -116,17 +116,7 @@ $body-link-color: #ffffff;
       }
       
       .page-header {
-            @include large {
-                  padding: 2rem 1rem;
-            }
-
-            @include medium {
-                  padding: 2rem 1rem;
-            }
-
-            @include small {
-                  padding: 2rem 1rem;
-            }
+            padding: 2rem 1rem;
       }
 }
 
