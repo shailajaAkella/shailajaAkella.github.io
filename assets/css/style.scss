@@ -131,6 +131,7 @@ $body-link-color: #ffffff;
             @include small {
                   font-size: 1rem;
             }
+      }
 }
 
 @import"{{site.theme}}"
