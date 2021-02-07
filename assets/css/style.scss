@@ -115,9 +115,22 @@ $body-link-color: #ffffff;
             border-top: none;
       }
       
-      .page-header {
-            padding: 10px 10px;
-      }
+      .project-tagline {
+            margin-bottom: 1rem;
+            font-weight: normal;
+            opacity: 0.7;
+
+            @include large {
+                  font-size: 1.25rem;
+            }
+
+            @include medium {
+                  font-size: 1.15rem;
+            }
+
+            @include small {
+                  font-size: 1rem;
+            }
 }
 
 @import"{{site.theme}}"
