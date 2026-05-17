@@ -254,7 +254,7 @@ img {
       height: auto;
       border-radius: 12px;
 }
-.column.content {
+.column.content-col {
       flex: 0 0 75%;
       max-width: 75%;
 }
@@ -270,7 +270,7 @@ img {
       .row {
             flex-direction: column;
       }
-      .column.image, .column.content {
+      .column.image, .column.content-col {
             flex: 1 1 100%;
             max-width: 100%;
       }
