@@ -308,31 +308,43 @@ img {
   gap: 1rem !important;
 }
 
-/* neutral base for columns inside .blurb */
-.blurb .row > .column {
-  /* allow explicit column rules to control sizing */
-  flex-grow: 0 !important;
-  flex-shrink: 1 !important;
-  flex-basis: auto !important;
-  min-width: 0 !important;
+/* Force horizontal layout for the homepage blurb row */
+.blurb .row {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  gap: 1rem !important;
+  align-items: flex-start !important;
   box-sizing: border-box !important;
 }
 
-/* 25% / 75% split for homepage blurb */
+/* Neutral base for columns inside .blurb */
+.blurb .row > .column {
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+  flex-grow: 0 !important;
+  flex-shrink: 0 !important;
+  flex-basis: auto !important;
+  width: auto !important;
+}
+
+/* Left image column 25% */
 .blurb .row > .column.image {
   flex: 0 0 25% !important;
   max-width: 25% !important;
   width: 25% !important;
+  margin: 0 !important;
 }
 
+/* Make the image fill its column */
 .blurb .row > .column.image img {
+  display: block !important;
   width: 100% !important;
   height: auto !important;
   border-radius: 12px !important;
-  display: block !important;
 }
 
-/* content column */
+/* Right content column 75% */
 .blurb .row > .column.content {
   flex: 0 0 75% !important;
   max-width: 75% !important;
@@ -340,10 +352,11 @@ img {
   overflow: visible !important;
 }
 
-/* Mobile: stack columns */
+/* Mobile: stack columns under 700px */
 @media screen and (max-width: 700px) {
   .blurb .row {
     flex-direction: column !important;
+    flex-wrap: wrap !important;
   }
   .blurb .row > .column.image,
   .blurb .row > .column.content {
