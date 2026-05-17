@@ -77,8 +77,8 @@ a:hover {
       margin-bottom: 0.2rem;
 }
 
-.project-tagline {
-      opacity: 0.95;
+.page-header .project-tagline {
+      opacity: 0.9;
 }
 
 .site-nav {
@@ -247,9 +247,6 @@ img {
 
 .page-header .project-name,
 .page-header .project-tagline {
-      color: #ffffff;
-}
-
-.page-header .project-tagline {
-      opacity: 0.9;
+      color: #ffffff !important;
+      opacity: 0.95;
 }
