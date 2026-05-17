@@ -300,3 +300,55 @@ img {
 .hero a {
       color: white;
 }
+
+/* Put this at the very end of your stylesheet so it wins */
+.blurb .row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 1rem !important;
+}
+
+/* neutral base for columns inside .blurb */
+.blurb .row > .column {
+  /* allow explicit column rules to control sizing */
+  flex-grow: 0 !important;
+  flex-shrink: 1 !important;
+  flex-basis: auto !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* 25% / 75% split for homepage blurb */
+.blurb .row > .column.image {
+  flex: 0 0 25% !important;
+  max-width: 25% !important;
+  width: 25% !important;
+}
+
+.blurb .row > .column.image img {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 12px !important;
+  display: block !important;
+}
+
+/* content column */
+.blurb .row > .column.content {
+  flex: 0 0 75% !important;
+  max-width: 75% !important;
+  width: 75% !important;
+  overflow: visible !important;
+}
+
+/* Mobile: stack columns */
+@media screen and (max-width: 700px) {
+  .blurb .row {
+    flex-direction: column !important;
+  }
+  .blurb .row > .column.image,
+  .blurb .row > .column.content {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
