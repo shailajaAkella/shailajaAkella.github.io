@@ -184,13 +184,13 @@ a:hover {
       gap: 1rem;
 }
 
-.column {
-      flex: 1 1 320px;
-      min-width: 0;
+.left {
+  width: 25%;
 }
 
-.left {
-  flex: 1;
+.right {
+  width: 75%;
+  text-align: center;
 }
 
 .right {
