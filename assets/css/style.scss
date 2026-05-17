@@ -185,9 +185,10 @@ a:hover {
 }
 
 .column {
-    flex: 0 1 auto;
-    min-width: 0;
+      flex: 1 1 320px;
+      min-width: 0;
 }
+
 .textWrap {
       float: right;
       margin: 0 0 0.9rem 1rem;
@@ -245,8 +246,8 @@ img {
 
 /* Homepage image + content columns customization */
 .column.image {
-      flex: 0 0 25%;
-      max-width: 25%;
+      flex: 0 0 25% !important;
+      max-width: 25% !important;
 }
 .column.image img {
       width: 100%;
@@ -254,8 +255,8 @@ img {
       border-radius: 12px;
 }
 .column.content {
-      flex: 0 0 75%;
-      max-width: 75%;
+      flex: 0 0 75% !important;
+      max-width: 75% !important;
 }
 .affiliation {
       text-align: left;
