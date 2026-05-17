@@ -185,7 +185,6 @@ a:hover {
 }
 
 .column {
-      flex: 1 1 320px;
       min-width: 0;
 }
 
@@ -254,7 +253,7 @@ img {
       height: auto;
       border-radius: 12px;
 }
-.column.content-col {
+.column.content {
       flex: 0 0 75%;
       max-width: 75%;
 }
@@ -270,7 +269,7 @@ img {
       .row {
             flex-direction: column;
       }
-      .column.image, .column.content-col {
+      .column.image, .column.content {
             flex: 1 1 100%;
             max-width: 100%;
       }
