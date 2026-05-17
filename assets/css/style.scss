@@ -1,6 +1,6 @@
 ---
 ---
-/* theme import removed to avoid Sass compile issues; theme styles are preserved where needed */
+@import "{{site.theme}}";
 
 :root {
       --bg: #f7fafc;
