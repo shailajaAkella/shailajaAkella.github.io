@@ -185,9 +185,9 @@ a:hover {
 }
 
 .column {
-      min-width: 0;
+    flex: 0 0 auto;
+    min-width: 0;
 }
-
 .textWrap {
       float: right;
       margin: 0 0 0.9rem 1rem;
